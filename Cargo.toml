@@ -1,0 +1,17 @@
+[package]
+name = "grove-rs"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+i2cdev = "0.6.1"
+linux-embedded-hal = "0.4.0"
+rppal = "0.22.1"
+
+#Executables
+[[bin]]
+name = "rs-grove_temperature_humidity"
+path = "src/bin/grove_temperature_humidity_sensor.rs"
+[[bin]]
+name = "rs-grove_moisture_sensor"
+path = "src/bin/grove_moisture_sensor.rs"
